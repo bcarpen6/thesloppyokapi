@@ -1,8 +1,12 @@
 <html>
   <head>
     <title>The Sloppy Okapi</title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
     <style>
       body { 
         background: url(splash-3.jpg) no-repeat right top; 
@@ -22,7 +26,7 @@
           min-height: 100%;
           height: auto !important;
           height: 100%;
-          margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+          margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
       }
 
       .center {
@@ -58,14 +62,14 @@
       }
 
       .footer, .push {
-          height: 50px; /* .push must be the same height as .footer */
-          font-family: Arial, sans-serif;
-          font-size: 18px;
+          height: 80px; /* .push must be the same height as .footer */
+          font-family: 'Henny Penny', cursive;
+          font-size: 25px;
+          color: white;
       }
 
       .footer {
-        background-color: white;
-        text-align: center;
+        padding: 10px;
       }
 
       .fa {
@@ -75,6 +79,10 @@
 
       .fa-facebook, .fa-instagram {
         margin-left: 50px;
+      }
+
+      .copyright {
+        font-size: 15px;
       }
 
       @media only screen and (max-width: 600px) {
@@ -107,6 +115,6 @@
       </div>
       </div>
   </div>
-  <div class="footer">The Sloppy Okapi <a href="http://www.enduranceent.com" target="_blank"><img style="height: 50px;" src="ee.jpg" /></a> Copyright 2017</div>
+  <div class="footer"><div class="pull-left">The Sloppy Okapi<br/><span class="copyright">© Copyright 2017</div> <a class="pull-right" href="http://www.enduranceent.com" target="_blank"><img style="height: 50px;" src="ee.jpg" /></a></div>
   </body>
 </html>
