@@ -1,16 +1,112 @@
 <html>
   <head>
     <title>The Sloppy Okapi</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <style>
-      body {
-        background-color: #165671;
+      body { 
+        background: url(splash-3.jpg) no-repeat right top; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
       }
-    </style>
 
+      * {
+          margin: 0;
+      }
+      html, body {
+          height: 100%;
+      }
+      .wrapper {
+          min-height: 100%;
+          height: auto !important;
+          height: 100%;
+          margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+      }
+
+      .center {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+      }
+
+      i {
+        cursor: pointer;
+      }
+
+      .fa {
+        font-size: 30px !important;
+        color: white;
+      }
+
+      .footer, .push {
+          height: 50px; /* .push must be the same height as .footer */
+          font-family: Arial, sans-serif;
+          font-size: 18px;
+      }
+
+      .footer {
+        background-color: white;
+        text-align: center;
+      }
+
+      .fa {
+        font-size: 80px !important;
+        margin-top: 10px;
+      }
+
+      .fa-facebook, .fa-instagram {
+        margin-left: 50px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .logo { width: 300px; }
+        .fa {
+        font-size: 60px !important;
+        }
+
+      }
+
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <img src="splash.png" class="img-responsive" />
+
+  <div class="wrapper">
+    <div class="center">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <img class="logo" src="logo.png" width="600px" />
+        </div>
+        <div class="col-lg-12 text-center">
+        </br>
+        <a href="mailto:david@enduranceent.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/thesloppyokapi/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/thesloppyokapi/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+
+      </div>
+      </div>
+  </div>
+  <div class="footer">The Sloppy Okapi <a href="http://www.enduranceent.com" target="_blank"><img style="height: 50px;" src="ee.jpg" /></a> Copyright 2017</div>
   </body>
 </html>
