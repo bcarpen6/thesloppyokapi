@@ -93,11 +93,34 @@
 
       }
 
+      .corner-ribbon{
+        width: 400px;
+        background: #39d;
+        position: absolute;
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #f0f0f0;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        font-size: 30px;
+      }
+
+      .corner-ribbon.top-right{
+        top: 70px;
+        right: -100px;
+        left: auto;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
       </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
+
+  <div class="corner-ribbon top-right sticky red shadow">Preorder opens <br/>October 18th</div>
 
   <div class="wrapper">
     <div class="center">
